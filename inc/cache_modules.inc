@@ -56,8 +56,8 @@ uint32_t impl_prefetcher_cache_operate(uint64_t addr, uint64_t ip, uint8_t cache
 uint32_t pref_pprefetcherDno_cache_fill(uint64_t, uint32_t, uint32_t, uint8_t, uint64_t, uint32_t);
 uint32_t impl_prefetcher_cache_fill(uint64_t addr, uint32_t set, uint32_t way, uint8_t prefetch, uint64_t evicted_addr, uint32_t metadata_in)
 {
-    if (pref_type == pref_t::pprefetcherDno) return pref_pprefetcherDno_cache_fill(addr, set, way, prefetch, evicted_addr, metadata_in);
     if (pref_type == pref_t::CPU_REDIRECT_pprefetcherDno_instr_) return ooo_cpu[cpu]->pref_pprefetcherDno_instr_cache_fill(addr, set, way, prefetch, evicted_addr, metadata_in);
+    if (pref_type == pref_t::pprefetcherDno) return pref_pprefetcherDno_cache_fill(addr, set, way, prefetch, evicted_addr, metadata_in);
     throw std::invalid_argument("Data prefetcher module not found");
 }
 
