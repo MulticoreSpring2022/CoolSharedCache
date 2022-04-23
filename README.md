@@ -73,7 +73,7 @@ You can modify the `champsim_config.json` with the following content with the di
         "virtual_prefetch": false,
         "prefetch_activate": "LOAD,PREFETCH",
         "prefetcher": "no",
-        "replacement": "eaf" // Modify here, eample "lfru"
+        "replacement": "eaf" // Modify here, example "lfru"
     },
 ```
 
