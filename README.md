@@ -105,7 +105,7 @@ If you want to run 4 cores, you should modify the `num_cores` in `champsim_confi
     },
 ```
 
-Then recompile and run the simulaotr again.
+Then recompile and run the simulator again.
 
 ---
 
