@@ -1,3 +1,6 @@
 # Editor
 .idea/
 cmake-build-debug/
+
+# Generated File
+.champsimconfig_cache
