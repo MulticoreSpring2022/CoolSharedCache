@@ -4,5 +4,5 @@ cmake-build-debug/
 
 # Generated File
 .champsimconfig_cache
-*.d
-*.o
+
+traces/
